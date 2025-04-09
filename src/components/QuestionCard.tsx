@@ -11,16 +11,12 @@ const QuestionCard = ({ points, onClick }: QuestionCardProps) => {
     <div 
       className="question-card bg-white rounded-lg p-6 shadow-md border border-gray-100 text-center"
     >
-      <div className="point-badge mx-auto mb-4">{points}</div>
-      <h3 className="text-xl font-bold mb-4">שאלה בשווי {points} נקודות</h3>
-      <p className="text-gray-600 mb-6">
-        בחר שאלה בדרגת קושי זו כדי להרוויח {points} נקודות
-      </p>
+      <div className="text-3xl font-bold mb-4 text-theme-purple">{points} נקודות</div>
       <Button 
         onClick={() => onClick(points)}
         className="w-full"
       >
-        בחר שאלה
+        הגרל שאלה
       </Button>
     </div>
   );

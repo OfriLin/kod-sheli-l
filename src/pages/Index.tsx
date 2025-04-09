@@ -31,7 +31,7 @@ const Index = () => {
       <Header />
       
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold text-center mb-8">לומדים C# - כיתה י׳</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 text-theme-purple">זוכרים C#?! 😵‍💫😁</h1>
         
         <div className="mb-12">
           <ProgressBar />
