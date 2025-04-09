@@ -9,12 +9,12 @@ type QuestionCardProps = {
 const QuestionCard = ({ points, onClick }: QuestionCardProps) => {
   return (
     <div 
-      className="question-card bg-white rounded-lg p-6 shadow-md border border-gray-100 text-center"
+      className="question-card bg-[#E6D5A9] rounded-lg p-6 shadow-md border border-[#AFBEA2] text-center"
     >
-      <div className="text-3xl font-bold mb-4 text-theme-purple">{points} נקודות</div>
+      <div className="text-3xl font-bold mb-4 text-[#51624F]">{points} נקודות</div>
       <Button 
         onClick={() => onClick(points)}
-        className="w-full"
+        className="w-full bg-[#51624F] hover:bg-[#51624F]/90 text-white"
       >
         הגרל שאלה
       </Button>

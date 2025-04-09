@@ -37,7 +37,7 @@ const QuestionPage = () => {
 
   if (!question) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-[#AFBEA2]/20">
         <Header />
         <div className="container mx-auto px-4 py-8">
           <div className="text-center">טוען שאלה...</div>
@@ -47,39 +47,38 @@ const QuestionPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#AFBEA2]/20">
       <Header />
       <div className="container mx-auto px-4 py-8">
         <Button 
           variant="ghost" 
-          className="mb-6 flex items-center gap-2"
+          className="mb-6 flex items-center gap-2 text-[#51624F] hover:bg-[#E6D5A9]/30"
           onClick={() => navigate("/")}
         >
           <ArrowRight size={16} />
           חזרה לדף הבית
         </Button>
 
-        <Card className="max-w-4xl mx-auto">
-          <CardHeader className="border-b">
+        <Card className="max-w-4xl mx-auto border-[#9CB4AC]">
+          <CardHeader className="border-b border-[#AFBEA2]">
             <div className="flex justify-between items-center">
               <CardTitle>שאלה ({question.points} נקודות)</CardTitle>
-              <div className="point-badge">{question.points}</div>
+              <div className="point-badge bg-gradient-to-r from-[#51624F] to-[#9CB4AC]">{question.points}</div>
             </div>
           </CardHeader>
           <CardContent className="pt-6">
             <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-4">{question.text}</h2>
+              <h2 className="text-xl font-semibold mb-4 text-[#51624F]">{question.text}</h2>
               {question.codeExample && (
-                <pre className="bg-gray-100 p-4 rounded-md overflow-x-auto code-editor mb-6">
+                <pre className="bg-[#E6D5A9]/50 p-4 rounded-md overflow-x-auto code-editor mb-6">
                   <code>{question.codeExample}</code>
                 </pre>
               )}
             </div>
 
             <div className="mb-4">
-              <h3 className="text-lg font-medium mb-2">הפתרון שלי:</h3>
+              <h3 className="text-lg font-medium mb-2 text-[#51624F]">הפתרון שלי:</h3>
               <CodeEditor 
-                initialValue={question.codeExample || ""} 
                 onSubmit={handleSubmit} 
               />
             </div>
