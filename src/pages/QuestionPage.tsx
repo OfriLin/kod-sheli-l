@@ -69,11 +69,6 @@ const QuestionPage = () => {
           <CardContent className="pt-6">
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-4 text-[#51624F]">{question.text}</h2>
-              {question.codeExample && (
-                <pre className="bg-[#E6D5A9]/50 p-4 rounded-md overflow-x-auto code-editor mb-6">
-                  <code>{question.codeExample}</code>
-                </pre>
-              )}
             </div>
 
             <div className="mb-4">
