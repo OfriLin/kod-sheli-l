@@ -40,7 +40,7 @@ const QuestionPage = () => {
       <div className="min-h-screen bg-[#AFBEA2]/20">
         <Header />
         <div className="container mx-auto px-4 py-8">
-          <div className="text-center">טוען שאלה...</div>
+          <div className="text-center text-[#51624F]">טוען שאלה...</div>
         </div>
       </div>
     );
@@ -59,14 +59,14 @@ const QuestionPage = () => {
           חזרה לדף הבית
         </Button>
 
-        <Card className="max-w-4xl mx-auto border-[#9CB4AC]">
-          <CardHeader className="border-b border-[#AFBEA2]">
+        <Card className="max-w-4xl mx-auto border-[#9CB4AC] shadow-md">
+          <CardHeader className="border-b border-[#AFBEA2] bg-[#E6D5A9]/30">
             <div className="flex justify-between items-center">
-              <CardTitle>שאלה ({question.points} נקודות)</CardTitle>
+              <CardTitle className="text-[#51624F]">שאלה ({question.points} נקודות)</CardTitle>
               <div className="point-badge bg-gradient-to-r from-[#51624F] to-[#9CB4AC]">{question.points}</div>
             </div>
           </CardHeader>
-          <CardContent className="pt-6">
+          <CardContent className="pt-6 bg-white/90">
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-4 text-[#51624F]">{question.text}</h2>
             </div>

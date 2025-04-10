@@ -20,11 +20,11 @@ const CodeEditor = ({ initialValue = "", onSubmit }: CodeEditorProps) => {
       <Textarea
         value={code}
         onChange={(e) => setCode(e.target.value)}
-        className="min-h-[200px] font-mono text-left code-editor p-4 border-2 border-[#9CB4AC] rounded-lg"
+        className="min-h-[200px] font-mono text-left code-editor p-4 border-2 border-[#9CB4AC] rounded-lg focus-visible:ring-[#51624F] bg-white/90"
         placeholder="// כתבו את הפתרון שלכם כאן"
       />
       <div className="mt-4 flex justify-end">
-        <Button onClick={handleSubmit} className="px-8 bg-[#51624F] hover:bg-[#51624F]/90">הגש</Button>
+        <Button onClick={handleSubmit} className="px-8 bg-[#51624F] hover:bg-[#51624F]/90 text-white">הגש</Button>
       </div>
     </div>
   );

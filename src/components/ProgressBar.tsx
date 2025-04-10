@@ -10,18 +10,18 @@ const ProgressBar = () => {
   return (
     <div className="w-full max-w-3xl mx-auto">
       <div className="flex justify-between items-center mb-2">
-        <span className="text-sm font-medium text-gray-700">התקדמות שלך</span>
-        <span className="text-sm font-medium text-theme-purple">{points} / {MAX_POINTS} נקודות</span>
+        <span className="text-sm font-medium text-[#51624F]">התקדמות שלך</span>
+        <span className="text-sm font-medium text-[#51624F]">{points} / {MAX_POINTS} נקודות</span>
       </div>
       
-      <div className="progress-container">
+      <div className="progress-container bg-[#E6D5A9]/50 rounded-full h-4 overflow-hidden">
         <div 
-          className="progress-bar" 
+          className="progress-bar bg-gradient-to-r from-[#51624F] to-[#9CB4AC]" 
           style={{ width: `${percentage}%` }}
         ></div>
       </div>
       
-      <div className="mt-1 text-xs text-gray-500 text-left">{percentage}%</div>
+      <div className="mt-1 text-xs text-[#51624F]/70 text-left">{percentage}%</div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext";
 import Header from "../components/Header";
@@ -17,7 +16,7 @@ const Index = () => {
 
   if (!isLoggedIn) {
     return (
-      <div className="min-h-screen bg-gray-50 flex flex-col">
+      <div className="min-h-screen bg-[#AFBEA2]/20 flex flex-col">
         <Header />
         <div className="flex-1 flex items-center justify-center px-4 py-12">
           <LoginForm />
@@ -27,18 +26,18 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#AFBEA2]/20">
       <Header />
       
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-center mb-8 text-theme-purple">זוכרים C#?! 😵‍💫😁</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 text-[#51624F]">זוכרים C#?! 😵‍💫😁</h1>
         
         <div className="mb-12">
           <ProgressBar />
         </div>
         
         <div>
-          <h2 className="text-2xl font-semibold text-center mb-8">בחר שאלה לפי ניקוד</h2>
+          <h2 className="text-2xl font-semibold text-center mb-8 text-[#51624F]">בחר שאלה לפי ניקוד</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {[5, 10, 15, 20, 30].map((points) => (

@@ -68,6 +68,10 @@ export default {
 					blue: '#0EA5E9',
 					indigo: '#6366F1',
 					lightblue: '#93C5FD',
+					darkGreen: '#51624F',
+					beige: '#E6D5A9',
+					lightGreen: '#AFBEA2',
+					sage: '#9CB4AC',
 				}
 			},
 			fontFamily: {

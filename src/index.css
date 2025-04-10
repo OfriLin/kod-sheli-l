@@ -110,11 +110,11 @@
 
 /* Custom progress bar styling */
 .progress-container {
-  @apply w-full bg-gray-200 rounded-full h-4 overflow-hidden;
+  @apply w-full rounded-full h-4 overflow-hidden;
 }
 
 .progress-bar {
-  @apply h-4 rounded-full transition-all duration-500 ease-out bg-gradient-to-r from-theme-purple to-theme-blue;
+  @apply h-4 rounded-full transition-all duration-500 ease-out;
 }
 
 /* Question card animations */
@@ -128,5 +128,13 @@
 
 /* Point badges */
 .point-badge {
-  @apply px-3 py-1 rounded-full font-bold text-white bg-gradient-to-r from-theme-indigo to-theme-blue;
+  @apply px-3 py-1 rounded-full font-bold text-white;
+}
+
+/* Add color theme variables for our palette */
+:root {
+  --color-dark-green: 81, 98, 79;     /* #51624F */
+  --color-beige: 230, 213, 169;       /* #E6D5A9 */
+  --color-light-green: 175, 190, 162; /* #AFBEA2 */
+  --color-sage: 156, 180, 172;        /* #9CB4AC */
 }
